@@ -1,28 +1,28 @@
 {
 
-	"title": "Title",
-	"public_key": "Public key",
-	"NODE_URL": "wss://mainnet.infura.io/ws/v3/63dbbe242127449b9aeb061c6640ab95",
-	"mnemonic": "",
+	"title": "Recipe Generator Oracle",
+	"public_key": "0xEbA4ed99a55751c35DC914a7452B8766DaFe7221",
+	"NODE_URL": "wss://kovan.infura.io/ws/xeb916AFjrcttuQlezyq",
+	"mnemonic": "train false salmon kidney travel engage garbage skull space space effort write",
 	"STATUS_URL":"",
 	"EndpointSchema": {
-		"name": "",
+		"name": "Recipe Generator",
 		"curve": [2,
-			5000000000000000000,
-			2000000000000000000,
+			5,
+			2,
 			1000,
 			2,
 			0,
-			3000000000000000000,
+			3,
 			1000000000000000000
 		],
 		"broker": "",
-		"md": "Adding description for your Oracle here",
+		"md": "Recipe generator, returns recipes based on ingredients inputted",
 		"queryList": [{
-			"query": "Query string that your Oracle will accept",
-			"params": [],
+			"query": "RecipeResult",
+			"params": ["[Ingredients]"],
 			"dynamic": false,
-			"responseType": "[int]"
+			"responseType": "[string]"
 		}]
 	}
 
